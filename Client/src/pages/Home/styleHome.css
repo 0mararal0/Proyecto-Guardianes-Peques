@@ -1,0 +1,14 @@
+.containerSection1Home {
+  /* background-image: url(../../assets/images/padreHijo.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: contain; */
+
+  height: 50dvh;
+  border-radius: 20px;
+  background-color: #fce9e7;
+}
+
+.containerSection1Home img {
+  height: 100%;
+  object-fit: cover;
+}
