@@ -20,9 +20,7 @@ export const NavbarApp = () => {
           >
             <Nav>
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#link">Sobre Nosotros</Nav.Link>
               <Nav.Link href="#link">FAQ´S</Nav.Link>
-              <Nav.Link href="#link">Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

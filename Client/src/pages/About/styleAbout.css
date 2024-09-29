@@ -1,0 +1,6 @@
+.about-div {
+  max-width: 800px; /* Limita el ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto */
+}
