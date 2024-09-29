@@ -1,4 +1,5 @@
 import "./styleHome.css";
+import { Link } from "react-router-dom";
 import foto1 from "../../assets/images/padreHijo-removebg-preview.png";
 
 export const Home = () => {
@@ -8,10 +9,12 @@ export const Home = () => {
         <img src={foto1} alt="" />
         <div className="my-auto">
           <h1>Personas de confianza cerca de ti</h1>
-          <label htmlFor="">
-            <input type="text" placeholder="Introduce un código Postal" />
-          </label>
-          <p>¿Quieres trabajar con nosotros? Encuentra un trabajo</p>
+          <Link to={"/filter"}>
+            <p>Guardianes</p>
+          </Link>
+          <Link to={"/filterGuardian"}>
+            <p>¿Quieres trabajar con nosotros? Encuentra un trabajo</p>
+          </Link>
         </div>
       </section>
     </>
