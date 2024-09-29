@@ -19,7 +19,7 @@ export const NavbarApp = () => {
             className="justify-content-end"
           >
             <Nav>
-              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="#link">FAQ´S</Nav.Link>
             </Nav>
           </Navbar.Collapse>
