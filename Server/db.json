@@ -1,0 +1,50 @@
+{
+  "guardian": [
+    {
+      "id": "abcd",
+      "nombre": "Pepe",
+      "apellido": "Gonzalez",
+      "localidad": "arroyo",
+      "provincia": "valladolid",
+      "nacimiento": "01/01/1990",
+      "teléfono": "699699699",
+      "email": "a@a.a",
+      "foto": "",
+      "numeroNiños": "1",
+      "años": ["2"],
+      "tareas": ["bañar a los niños", "dormir a los nños"],
+      "ocasional": "false",
+      "diasSemana": ["l", "x", "v"],
+      "diaInicio": "01/10/2024",
+      "horaInicio": "22:00",
+      "tiempo": "2",
+      "tarifa": "20",
+      "comentario": ""
+    }
+  ],
+
+  "client": [
+    {
+      "id": "1234",
+      "nombre": "Alberto",
+      "apellido": "Marcos",
+      "direccion": "plaza mayor",
+      "piso": "1",
+      "letra": "A",
+      " cp": "47000",
+      "localidad": "arroyo",
+      "provincia": "valladolid",
+      "teléfono": "699699699",
+      "email": "a@a.a",
+      "numeroNiños": "1",
+      "años": ["2"],
+      "tareas": ["bañar a los niños", "dormir a los nños"],
+      "ocasional": "false",
+      "diasSemana": ["l", "x", "v"],
+      "diaInicio": "01/10/2024",
+      "horaInicio": "22:00",
+      "tiempo": "2",
+      "guardianId": "abcd"
+    }
+  ]
+}
