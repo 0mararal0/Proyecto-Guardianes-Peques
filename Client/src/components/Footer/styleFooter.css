@@ -1,8 +1,9 @@
-.containerFooter {
-  height: 100px;
-  background-color: #333333;
-  color: aliceblue;
-  position: absolute;
-  bottom: 0;
+.text-footer{
   text-align: center;
+  font-size: 13px;
+}
+
+.bg-body-tertiary{
+  margin-bottom: 100px;
+  padding-bottom: 30px;
 }

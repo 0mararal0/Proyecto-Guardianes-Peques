@@ -1,5 +1,5 @@
 import React from "react";
 
 export const LegalNotice = () => {
-  return <div>LegalNotice</div>;
+  return <div>Aviso legal</div>;
 };

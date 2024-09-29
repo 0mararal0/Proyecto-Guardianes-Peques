@@ -6,7 +6,6 @@ export const Home = () => {
     <>
       <section className="containerSection1Home container-xxl mx-auto m-5 d-flex">
         <img src={foto1} alt="" />
-
         <div className="my-auto">
           <h1>Personas de confianza cerca de ti</h1>
           <label htmlFor="">
