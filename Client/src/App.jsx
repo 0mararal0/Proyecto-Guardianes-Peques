@@ -8,18 +8,24 @@ import { About } from "./pages/About/About";
 import { Filter } from "./pages/Filter/Filter";
 import { FilterClient } from "./pages/Filter/FilterClient";
 import { FilterGuardian } from "./pages/Filter/FilterGuardian";
+import { LegalNotice } from "./pages/LegalNotice/LegalNotice";
+import { Contact } from "./pages/Contact/Contact";
 
 function App() {
   return (
     <>
       <NavbarApp />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/filter" element={<Filter />} />
-        <Route path="/filterClient" element={<FilterClient />} />
-        <Route path="/filterGuardian" element={<FilterGuardian />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/legalNotice" element={<LegalNotice />} />
+          <Route path="/filter" element={<Filter />} />
+          <Route path="/filterClient" element={<FilterClient />} />
+          <Route path="/filterGuardian" element={<FilterGuardian />} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
