@@ -7,17 +7,17 @@ export const Filter = () => {
   return (
     <>
       <section className="container-xxl text-center containerFilter">
-        <h3>¡Hola! ¿Podrías decirnos quien eres?</h3>
+        <h3>¡Hola! ¿Qué estás buscando?</h3>
         <Link to={"/filterClient"} style={{ textDecoration: "none" }}>
           <div className="containerLinkFilter">
             <img src={iconoNiño} alt="niño" />
-            <p>Una persona</p>
+            <p>Guardianes</p>
           </div>
         </Link>
         <Link to={"/filterGuardian"} style={{ textDecoration: "none" }}>
           <div className="containerLinkFilter">
             <img src={iconoCasa} alt="niño" />
-            <p>Un trabajador</p>
+            <p>Un trabajo</p>
           </div>
         </Link>
       </section>
