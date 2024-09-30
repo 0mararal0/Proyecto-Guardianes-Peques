@@ -1,9 +1,9 @@
-.text-footer{
+.text-footer {
   text-align: center;
   font-size: 13px;
 }
 
-.bg-body-tertiary{
+.containerFooter {
   margin-bottom: 100px;
   padding-bottom: 30px;
 }
