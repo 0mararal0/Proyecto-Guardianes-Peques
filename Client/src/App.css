@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "ConcertOne-Regular.ttf";
+  font-family: "ConcertOne";
   src: url("./assets/fonts/ConcertOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Signika-VariableFont_GRAD\,wght.ttf";
+  font-family: "Signika";
   src: url("./assets/fonts/Signika-VariableFont_GRAD\,wght.ttf")
     format("truetype");
   font-weight: normal;
@@ -23,4 +23,20 @@
   --guardian-naranja: #fc6736;
   --guardian-rosa: #ffb0b0;
   --guardian-gris: #efecec;
+}
+
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+}
+
+#root {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+}
+
+main {
+  flex: 1;
 }

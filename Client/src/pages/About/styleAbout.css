@@ -4,3 +4,13 @@
   padding: 20px; /* Espaciado interno */
   text-align: center; /* Centra el texto */
 }
+
+.texto{
+  font-family: Signika;
+
+}
+
+.titulo{
+  font-family: ConcertOne;
+
+}
