@@ -37,8 +37,20 @@ export const FilterClient = () => {
           setDataClient={setDataClient}
         />
       )}
-      {componentView === 4 && <FilterClient4 />}
-      {componentView === 5 && <FilterClient5 />}
+      {componentView === 4 && (
+        <FilterClient4
+          setComponentView={setComponentView}
+          setProgress={setProgress}
+          setDataClient={setDataClient}
+        />
+      )}
+      {componentView === 5 && (
+        <FilterClient5
+          setComponentView={setComponentView}
+          setProgress={setProgress}
+          setDataClient={setDataClient}
+        />
+      )}
       {componentView === 6 && <FilterClient6 />}
     </>
   );

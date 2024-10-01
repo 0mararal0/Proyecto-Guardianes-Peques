@@ -25,26 +25,42 @@
 
   "client": [
     {
-      "id": "1234",
+      "apellidos": "Marcos",
+      "ciudad": "Arroyo de la Encomienda",
+      "direcion": "Calle Narciso Monturiol 10",
+      "edadNiño": {
+        "bebe": true,
+        "pequeño": false,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": false
+      },
+      "email": "amarcosarranz@gmail.com",
+      "letra": "d",
+      "niños": "3",
       "nombre": "Alberto",
-      "apellido": "Marcos",
-      "direccion": "plaza mayor",
-      "piso": "1",
-      "letra": "A",
-      " cp": "47000",
-      "localidad": "arroyo",
-      "provincia": "valladolid",
-      "teléfono": "699699699",
-      "email": "a@a.a",
-      "numeroNiños": "1",
-      "años": ["2"],
-      "tareas": ["bañar a los niños", "dormir a los nños"],
-      "ocasional": "false",
-      "diasSemana": ["l", "x", "v"],
-      "diaInicio": "01/10/2024",
-      "horaInicio": "22:00",
-      "tiempo": "2",
-      "guardianId": "abcd"
+      "piso": "2",
+      "poblacion": "valladolid",
+      "reservationDay": [],
+      "reservationHour": [],
+      "reservationOccasional": false,
+      "reservationTime": 1,
+      "reservationWeek": {
+        "L": false,
+        "M": false,
+        " X": false,
+        "J": false,
+        "V": false
+      },
+      "tareas": {
+        "cocinar": false,
+        "recogida": false,
+        "tareas": false,
+        "actividades": true,
+        "dormir": false
+      },
+      "telefono": "33434",
+      "zip": "47195"
     }
   ]
 }

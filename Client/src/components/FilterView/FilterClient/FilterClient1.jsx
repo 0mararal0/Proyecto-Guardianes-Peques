@@ -15,6 +15,8 @@ export const FilterClient1 = ({
     escolar: false,
     adolescente: false,
   }); //guardamos los años de los niños
+  console.log(kidAge);
+
   const [kid, setKid] = useState(null); //guardamos los niños que tiene
 
   const handleKids = (e) => {
@@ -30,7 +32,7 @@ export const FilterClient1 = ({
     setDataClient((prov) => ({
       ...prov,
       niños: kid,
-      edad: kidAge,
+      edadNiño: kidAge,
     }));
   };
 
