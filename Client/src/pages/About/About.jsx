@@ -1,38 +1,65 @@
 import React from "react";
 import "./styleAbout.css";
+import imagenUno from "../../assets/images/XEKFGJNTN5G2TLE4HLGXU5LN5U.avif";
+
 
 export const About = () => {
   return (
-    <section>
-      <div className="about-div">
-        <h1 className="titulo">Acerca de nosotros</h1>
-        <div>
+    <>
+      <section className="section-class" style={{ backgroundImage: `url(${imagenUno})` }}>
+        <div className="fondo">
+          <h1 className="titulo-p">Acerca de nosotros</h1>
+          <div className="div-cards">
+          </div>
+        </div>
+      </section>
+
+      <section className="cards-section">
+        <h1 className="titulo-card">Nuestros Servicios</h1>
+
+        <div className="card">
           <h3 className="titulo">Conectamos familias con cuidadores.</h3>
           <p className="texto">
-          Guardianes & Peques es una plataforma creada con el objetivo de 
-          ofrecer atención de calidad a los niños, entendiendo que este cuidado 
-          es esencial para el bienestar familiar y el desarrollo saludable de los pequeños.
-          </p>
-          <p className="texto">Nuestra misión en Guardianes & Peques es facilitar a las familias la búsqueda 
-            de cuidadores especializados que se adapten a sus necesidades, al tiempo que 
-            brindamos oportunidades laborales a profesionales en el ámbito del cuidado infantil.
+            Guardianes & Peques es una plataforma creada con el objetivo de
+            ofrecer atención de calidad a los pequeños de la casa.
           </p>
         </div>
-        <div>
-          <h3 className="titulo">¿Qué ofrecemos?</h3>
-          <ul className="texto">
-          <li>
-          Para las familias, proporcionamos una solución accesible y completa que simplifica 
-          la búsqueda de niñeras, educadores, cuidadores con experiencia en necesidades especiales, 
-          y otros profesionales del cuidado infantil.
-          </li>
-          <li>
-          Para los cuidadores, ofrecemos una plataforma donde pueden descubrir oportunidades 
-          laborales de calidad y conectar con familias que valoran su experiencia y dedicación.
-          </li>
-          </ul>
+
+        <div className="card">
+          <p className="texto">
+          <h3 className="titulo">Objetivo.</h3>
+            Facilitamos a las familias la
+            búsqueda de cuidadores especializados que se adapten a sus
+            necesidades, al tiempo que brindamos oportunidades laborales a
+            profesionales en el ámbito del cuidado infantil.
+          </p>
         </div>
-      </div>
-    </section>
-  )
+
+        <div className="card">
+            <p className="texto">
+            <h3 className="titulo">¿Qué ofrecemos?</h3>
+              Para las familias, proporcionamos una solución accesible y
+              completa que simplifica la búsqueda de niñeras y educadores.
+            </p>
+        </div>
+
+        <div className="card">
+            <p className="texto">
+            <h3 className="titulo">Facilidades laborales</h3>
+              Para los cuidadores, ofrecemos una plataforma donde pueden
+              descubrir oportunidades laborales de calidad y conectar con
+              familias que valoran su experiencia y dedicación.
+            </p>
+        </div>
+
+        <div className="card">
+            <p className="texto">
+            <h3 className="titulo">Otros cuidados</h3>
+              cuidadores con experiencia en necesidades especiales, y otros
+              profesionales del cuidado infantil.
+            </p>
+        </div>
+      </section>
+    </>
+  );
 };

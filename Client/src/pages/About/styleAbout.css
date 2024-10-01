@@ -1,16 +1,82 @@
-.about-div {
-  max-width: 800px; /* Limita el ancho máximo del contenedor */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-  padding: 20px; /* Espaciado interno */
-  text-align: center; /* Centra el texto */
+.section-class {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  position: relative;
+  min-height: 50vh; /* Ajusta la altura mínima de la sección */
 }
 
-.texto{
-  font-family: Signika;
-
+/* Añade un overlay semitransparente sobre la imagen de fondo */
+.fondo {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
-.titulo{
+/* Contenedor para las tarjetas */
+.cards-section {
+  display: flex;
+  flex-direction: column; /* Cambia a columna para apilar las tarjetas */
+  align-items: center; /* Centrar las tarjetas */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 40px 20px; /* Espaciado superior e inferior */
+}
+
+/* Cada tarjeta de información */
+.card {
+  width: 100%; /* Ancho completo */
+  max-width: 800px; /* Ancho máximo */
+  padding: 20px;
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Fondo blanco para las tarjetas */
+  z-index: 2;
+}
+
+.titulo {
+  color: #070707;
+  margin-bottom: 10px;
   font-family: ConcertOne;
+}
 
+.titulo-p {
+  color: white;
+  font-family: ConcertOne;
+  text-align: center; /* Centrar el título principal */
+  font-size: 60px;
+}
+
+.titulo-card {
+  color: rgb(5, 5, 5);
+  font-family: ConcertOne;
+  text-align: center; /* Centrar el título principal */
+  font-size: 60px;
+}
+
+.texto {
+  color: #555;
+  line-height: 1.6;
+  font-family: Signika; /* Fuentes coherentes */
+  font-size: 18px; /* Ajustar tamaño de texto */
+}
+
+/* Estilo para listas */
+ul.texto {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 18px; /* Tamaño de texto de las listas */
+}
+
+/* Párrafos en la sección principal */
+.section-class p {
+  font-family: Signika;
+  font-size: 18px; /* Tamaño de texto coherente */
 }
