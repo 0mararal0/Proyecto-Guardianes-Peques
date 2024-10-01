@@ -1,6 +1,4 @@
 {
-  "guardian": [
-    {
       "id": "abcd",
       "nombre": "Pepe",
       "apellidos": "Gonzalez",
@@ -12,8 +10,8 @@
       "foto": "",
       "numeroNiños": "1",
       "edadNiño": {
-        "bebe": false,
-        "pequeño": true,
+        "bebe": true,
+        "pequeño": false,
         "prescolar": false,
         "escolar": false,
         "adolescente": false
@@ -25,7 +23,7 @@
         "actividades": true,
         "dormir": false
       },
-      "ocasional": false,
+      "ocasional": "false",
       "diasSemana": {
         "L": false,
         "M": false,
@@ -35,8 +33,8 @@
         "S": false,
         "D": false
       },
-      "diaInicio": [1, 5, 2024],
-      "horaInicio": [20, 5],
+      "diaInicio": [1,5,2024],
+      "horaInicio": [20,5],
       "tiempo": 5,
       "tarifa": 20,
       "comentario": ""

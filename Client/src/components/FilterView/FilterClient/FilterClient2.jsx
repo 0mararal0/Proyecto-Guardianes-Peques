@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import ToggleButton from "react-bootstrap/ToggleButton";
 import ToggleButtonGroup from "react-bootstrap/ToggleButtonGroup";
 
@@ -19,13 +18,14 @@ export const FilterClient2 = ({
   });
 
   const handleTask = (e) => {
-    setTask((prov) => ({ ...prov, [e.target.value]: e.target.checked }));
+    setTask((prev) => ({ ...prev, [e.target.value]: e.target.checked }));
   };
+
   const handleNextView = () => {
     setComponentView(3);
     setProgress((100 / 6) * 3);
-    setDataClient((prov) => ({
-      ...prov,
+    setDataClient((prev) => ({
+      ...prev,
       tareas: task,
     }));
   };
@@ -39,29 +39,18 @@ export const FilterClient2 = ({
         <ToggleButtonGroup
           type="checkbox"
           className="d-flex gap-2 flex-wrap w-25 bor"
-          onClick={handleTask}
         >
-          <ToggleButton id="cocinar" value={"cocinar"} checked>
-            Cocinar o preparación de comidas
-          </ToggleButton>
-          <ToggleButton id="recogida" value={"recogida"}>
-            Servicio de recogida
-          </ToggleButton>
-          <ToggleButton id="tareas" value={"tareas"}>
-            Tareas básicas de la casa
-          </ToggleButton>
-          <ToggleButton id="actividades" value={"actividades"}>
-            Actividades (ej: natación)
-          </ToggleButton>
-          <ToggleButton id="dormir" value={"dormir"}>
-            Poner a los nños a dormir
-          </ToggleButton>
-          <ToggleButton id="deberes" value={"deberes"}>
-            Ayuda con los deberes
-          </ToggleButton>
-          <ToggleButton id="baño" value={"baño"}>
-            Bañar a los niños
-          </ToggleButton>
+          {Object.keys(task).map((key) => (
+            <ToggleButton
+              key={key}
+              id={key}
+              value={key}
+              checked={task[key]}
+              onChange={handleTask} // Cambiado de onClick a onChange
+            >
+              {key.charAt(0).toUpperCase() + key.slice(1)} {/* Capitaliza la primera letra */}
+            </ToggleButton>
+          ))}
         </ToggleButtonGroup>
       </div>
 
