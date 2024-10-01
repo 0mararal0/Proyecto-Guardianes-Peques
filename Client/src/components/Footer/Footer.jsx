@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
+
     <footer className="footer">
       <Container className="footer-contenedor">
         <Nav className="d-flex justify-content-center align-items-center py-3 text-link">
