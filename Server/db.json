@@ -3,7 +3,7 @@
     {
       "id": "abcd",
       "nombre": "Pepe",
-      "apellido": "Gonzalez",
+      "apellidos": "Gonzalez",
       "localidad": "arroyo",
       "provincia": "valladolid",
       "nacimiento": "01/01/1990",
@@ -11,20 +11,41 @@
       "email": "a@a.a",
       "foto": "",
       "numeroNiños": "1",
-      "años": ["2"],
-      "tareas": ["bañar a los niños", "dormir a los nños"],
-      "ocasional": "false",
-      "diasSemana": ["l", "x", "v"],
-      "diaInicio": "01/10/2024",
-      "horaInicio": "22:00",
-      "tiempo": "2",
-      "tarifa": "20",
+      "edadNiño": {
+        "bebe": false,
+        "pequeño": true,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": false
+      },
+      "tareas": {
+        "cocinar": false,
+        "recogida": false,
+        "tareas": false,
+        "actividades": true,
+        "dormir": false
+      },
+      "ocasional": false,
+      "diasSemana": {
+        "L": false,
+        "M": false,
+        " X": false,
+        "J": false,
+        "V": false,
+        "S": false,
+        "D": false
+      },
+      "diaInicio": [1, 5, 2024],
+      "horaInicio": [20, 5],
+      "tiempo": 5,
+      "tarifa": 20,
       "comentario": ""
     }
   ],
 
   "client": [
     {
+      "id": "1",
       "apellidos": "Marcos",
       "ciudad": "Arroyo de la Encomienda",
       "direcion": "Calle Narciso Monturiol 10",
@@ -50,7 +71,9 @@
         "M": false,
         " X": false,
         "J": false,
-        "V": false
+        "V": false,
+        "S": false,
+        "D": false
       },
       "tareas": {
         "cocinar": false,
@@ -61,6 +84,45 @@
       },
       "telefono": "33434",
       "zip": "47195"
+    },
+    {
+      "id": "2",
+      "apellidos": "pepe",
+      "ciudad": "Arroyo de la Encomienda",
+      "direcion": "Calle Narciso Monturiol 10",
+      "edadNiño": {
+        "bebe": true,
+        "pequeño": false,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": false
+      },
+      "email": "amarcosarranz@gmail.com",
+      "letra": "d",
+      "niños": "3",
+      "nombre": "pepe",
+      "piso": "2",
+      "poblacion": "valladolid",
+      "reservationDay": [],
+      "reservationHour": [],
+      "reservationOccasional": false,
+      "reservationTime": 1,
+      "reservationWeek": {
+        "L": false,
+        "M": false,
+        " X": false,
+        "J": false,
+        "V": false
+      },
+      "tareas": {
+        "cocinar": false,
+        "recogida": false,
+        "tareas": false,
+        "actividades": true,
+        "dormir": false
+      },
+      "telefono": "334dd34",
+      "zip": "471s95"
     }
   ]
 }
