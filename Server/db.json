@@ -2,8 +2,8 @@
   "guardian": [
     {
       "id": "abcd",
-      "nombre": "Pepe",
-      "apellido": "Gonzalez",
+      "nombre": "Jorge",
+      "apellidos": "Gonzalez",
       "localidad": "arroyo",
       "provincia": "valladolid",
       "nacimiento": "01/01/1990",
@@ -11,14 +11,34 @@
       "email": "a@a.a",
       "foto": "",
       "numeroNiños": "1",
-      "años": ["2"],
-      "tareas": ["bañar a los niños", "dormir a los nños"],
+      "edadNiño": {
+        "bebe": true,
+        "pequeño":false,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": false
+      },
+      "tareas": {
+        "cocinar": false,
+        "recogida": false,
+        "tareas": false,
+        "actividades": true,
+        "dormir": false
+      },
       "ocasional": "false",
-      "diasSemana": ["l", "x", "v"],
-      "diaInicio": "01/10/2024",
-      "horaInicio": "22:00",
-      "tiempo": "2",
-      "tarifa": "20",
+      "diasSemana": {
+        "L": false,
+        "M": false,
+        "X": false,
+        "J": false,
+        "V": false,
+        "S": false,
+        "D": false
+      },
+      "diaInicio": [1,5,2024],
+      "horaInicio": [20,5],
+      "tiempo": 5,
+      "tarifa": 20,
       "comentario": ""
     }
   ],

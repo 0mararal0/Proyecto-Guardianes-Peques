@@ -14,7 +14,7 @@ export const FilterClient1 = ({
     prescolar: false,
     escolar: false,
     adolescente: false,
-  }); //guardamos los años de los niños
+  });
   console.log(kidAge);
 
   const [kid, setKid] = useState(null); //guardamos los niños que tiene
@@ -22,15 +22,16 @@ export const FilterClient1 = ({
   const handleKids = (e) => {
     setKid(e.target.id);
   };
-  const handleAge = (e) => {
-    setKidAge((prov) => ({ ...prov, [e.target.value]: e.target.checked }));
+
+  const handleAge = (value) => {
+    setKidAge((prev) => ({ ...prev, [value]: !prev[value] }));
   };
 
   const handleNextView = () => {
     setComponentView(2);
     setProgress((100 / 6) * 2);
-    setDataClient((prov) => ({
-      ...prov,
+    setDataClient((prev) => ({
+      ...prev,
       niños: kid,
       edadNiño: kidAge,
     }));
@@ -41,7 +42,7 @@ export const FilterClient1 = ({
       <div className="container-xxl">
         <h3>Detalles</h3>
         <p>¿Cuántos niños tienes?</p>
-        <Form onClick={handleKids}>
+        <Form>
           <div>
             <Form.Check
               inline
@@ -49,6 +50,7 @@ export const FilterClient1 = ({
               name="group1"
               type={"radio"}
               id={"1"}
+              onChange={handleKids}
             />
             <Form.Check
               inline
@@ -56,15 +58,17 @@ export const FilterClient1 = ({
               name="group1"
               type={"radio"}
               id={"2"}
+              onChange={handleKids}
             />
           </div>
           <div>
             <Form.Check
               inline
-              label="3 niño"
+              label="3 niños"
               name="group1"
               type={"radio"}
               id={"3"}
+              onChange={handleKids}
             />
             <Form.Check
               inline
@@ -72,6 +76,7 @@ export const FilterClient1 = ({
               name="group1"
               type={"radio"}
               id={"4"}
+              onChange={handleKids}
             />
           </div>
         </Form>
@@ -79,31 +84,22 @@ export const FilterClient1 = ({
         <ToggleButtonGroup
           type="checkbox"
           className="d-flex gap-2 flex-wrap w-25 bor"
-          onClick={handleAge}
         >
-          <ToggleButton id="bebe" value={"bebe"} checked>
-            Bebé
-          </ToggleButton>
-          <ToggleButton id="pequeño" value={"pequeño"}>
-            Niño pequeño
-          </ToggleButton>
-          <ToggleButton id="prescolar" value={"prescolar"}>
-            Edad Prescolar
-          </ToggleButton>
-          <ToggleButton id="escolar" value={"escolar"}>
-            Edad escolar (6-12 años)
-          </ToggleButton>
-          <ToggleButton id="adolescente" value={"adolescente"}>
-            Adolescente
-          </ToggleButton>
+          {Object.keys(kidAge).map((age) => (
+            <ToggleButton
+              key={age}
+              id={age}
+              value={age}
+              checked={kidAge[age]}
+              onChange={() => handleAge(age)}
+            >
+              {age.charAt(0).toUpperCase() + age.slice(1)}
+            </ToggleButton>
+          ))}
         </ToggleButtonGroup>
       </div>
       {kid === null ||
-      (kidAge.bebe === false &&
-        kidAge.pequeño === false &&
-        kidAge.prescolar === false &&
-        kidAge.escolar === false &&
-        kidAge.adolescente === false) ? (
+      (Object.values(kidAge).every((age) => !age)) ? (
         <button disabled>Siguiente</button>
       ) : (
         <button onClick={handleNextView}>Siguiente</button>
