@@ -23,7 +23,7 @@ export const FilterClient2 = ({
 
   const handleNextView = () => {
     setComponentView(3);
-    setProgress((100 / 6) * 3);
+    setProgress((100 / 5) * 3);
     setDataClient((prev) => ({
       ...prev,
       tareas: task,
@@ -48,7 +48,8 @@ export const FilterClient2 = ({
               checked={task[key]}
               onChange={handleTask} // Cambiado de onClick a onChange
             >
-              {key.charAt(0).toUpperCase() + key.slice(1)} {/* Capitaliza la primera letra */}
+              {key.charAt(0).toUpperCase() + key.slice(1)}{" "}
+              {/* Capitaliza la primera letra */}
             </ToggleButton>
           ))}
         </ToggleButtonGroup>

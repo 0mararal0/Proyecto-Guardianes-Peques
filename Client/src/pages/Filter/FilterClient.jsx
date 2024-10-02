@@ -9,8 +9,9 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 
 export const FilterClient = () => {
   const [componentView, setComponentView] = useState(1);
-  const [progress, setProgress] = useState(100 / 6);
+  const [progress, setProgress] = useState(100 / 5);
   const [dataClient, setDataClient] = useState({});
+
   console.log(dataClient);
 
   return (
@@ -52,7 +53,14 @@ export const FilterClient = () => {
           dataClient={dataClient}
         />
       )}
-      {componentView === 6 && <FilterClient6 />}
+      {componentView === 6 && (
+        <FilterClient6
+          setComponentView={setComponentView}
+          setProgress={setProgress}
+          setDataClient={setDataClient}
+          dataClient={dataClient}
+        />
+      )}
     </>
   );
 };

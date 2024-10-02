@@ -29,7 +29,7 @@ export const FilterClient1 = ({
 
   const handleNextView = () => {
     setComponentView(2);
-    setProgress((100 / 6) * 2);
+    setProgress((100 / 5) * 2);
     setDataClient((prev) => ({
       ...prev,
       niños: kid,
@@ -98,8 +98,7 @@ export const FilterClient1 = ({
           ))}
         </ToggleButtonGroup>
       </div>
-      {kid === null ||
-      (Object.values(kidAge).every((age) => !age)) ? (
+      {kid === null || Object.values(kidAge).every((age) => !age) ? (
         <button disabled>Siguiente</button>
       ) : (
         <button onClick={handleNextView}>Siguiente</button>

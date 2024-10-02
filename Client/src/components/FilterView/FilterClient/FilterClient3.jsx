@@ -49,7 +49,7 @@ export const FilterClient3 = ({
   };
   const handleNextView = () => {
     setComponentView(4);
-    setProgress((100 / 6) * 4);
+    setProgress((100 / 5) * 4);
     setDataClient((prov) => ({
       ...prov,
       reservationOccasional: occasional,
