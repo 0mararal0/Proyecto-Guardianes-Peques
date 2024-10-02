@@ -13,6 +13,7 @@ import { Contact } from "./pages/Contact/Contact";
 import { NotFound } from "./pages/NotFound/NotFound";
 import { Reservation } from "./pages/Reservation/reservation";
 import { Guardians } from "./pages/Guardians/Guardians";
+import { EditGuardian } from "./pages/EditGuardian/EditGuardian";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/filterClient/" element={<FilterClient />} />
           <Route path="/filterGuardian" element={<FilterGuardian />} />
           <Route path="/guardians" element={<Guardians />} />
+          <Route path="/editGuardian/:guardianId" element={<EditGuardian />} />
           <Route path="/reservation/:guardianId" element={<Reservation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
