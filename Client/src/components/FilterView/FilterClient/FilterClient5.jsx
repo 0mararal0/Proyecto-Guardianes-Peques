@@ -15,16 +15,17 @@ export const FilterClient5 = ({
     axios
       .get("http://localhost:4000/guardian")
       .then((res) => {
-        let prov = res.data.filter((elem) =>
-          elem.edadNiño.bebe
-            ? true
-            : dataClient.edadNiño.bebe
-            ? false
-            : true && elem.edadNiño.pequeño
-            ? true
-            : dataClient.edadNiño.pequeño
-            ? false
-            : true && elem.edadNiño.prescolar
+        let prov = res.data.filter(
+          (elem) =>
+            elem.edadNiño.bebe
+              ? true
+              : dataClient.edadNiño.bebe
+              ? false
+              : true && elem.edadNiño.pequeño
+              ? true
+              : dataClient.edadNiño.pequeño
+              ? false
+              : true /*&& elem.edadNiño.prescolar
             ? true
             : dataClient.edadNiño.prescolar
             ? false
@@ -64,7 +65,7 @@ export const FilterClient5 = ({
             ? true
             : dataClient.reservationOccasional
             ? false
-            : true
+            : true */
         );
         setDataGuardian(prov);
         console.log(prov);

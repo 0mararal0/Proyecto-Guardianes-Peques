@@ -25,7 +25,6 @@
         "actividades": true,
         "dormir": false
       },
-      "ocasional": "false",
       "diasSemana": {
         "L": false,
         "M": false,
@@ -35,8 +34,8 @@
         "S": false,
         "D": false
       },
-      "diaInicio": [1, 5, 2024],
       "horaInicio": [20, 5],
+      "horaFin": [20, 5],
       "tiempo": 5,
       "tarifa": 20,
       "comentario": ""
