@@ -37,6 +37,7 @@
       },
       "diaInicio": [1,5,2024],
       "horaInicio": [20,5],
+      "HoraFin": [20,5],
       "tiempo": 5,
       "tarifa": 20,
       "comentario": ""
