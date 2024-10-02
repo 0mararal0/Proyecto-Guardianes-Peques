@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "guardian": [
     {
       "nombre": "Miguel",
@@ -9,6 +10,17 @@
       "telefono": "642578307",
       "email": "migueel26@gmail.com",
       "foto": "ttt",
+=======
+      "id": "abcd",
+      "nombre": "Pepe",
+      "apellidos": "Gonzalez",
+      "localidad": "arroyo",
+      "provincia": "valladolid",
+      "nacimiento": "01/01/1990",
+      "teléfono": "699699699",
+      "email": "a@a.a",
+      "foto": "",
+>>>>>>> c57143a05d373a29a71c4329e343d8bb14d53008
       "numeroNiños": "1",
       "edadesSeleccionadas": {
         "bebe": true,
@@ -66,7 +78,7 @@
       "diasSemana": {
         "L": true,
         "M": false,
-        "X": false,
+        " X": false,
         "J": false,
         "V": false,
         "S": false,

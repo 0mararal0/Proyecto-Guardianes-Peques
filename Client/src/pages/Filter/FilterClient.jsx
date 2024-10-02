@@ -49,6 +49,7 @@ export const FilterClient = () => {
           setComponentView={setComponentView}
           setProgress={setProgress}
           setDataClient={setDataClient}
+          dataClient={dataClient}
         />
       )}
       {componentView === 6 && <FilterClient6 />}
