@@ -20,47 +20,47 @@ export const FilterClient5 = ({
             ? true
             : dataClient.edadNiño.bebe
             ? false
-            : true && elem.edadNiño.pequeño
+            : elem.edadNiño.pequeño
             ? true
             : dataClient.edadNiño.pequeño
             ? false
-            : true && elem.edadNiño.prescolar
+            : elem.edadNiño.prescolar
             ? true
             : dataClient.edadNiño.prescolar
             ? false
-            : true && elem.edadNiño.escolar
+            : elem.edadNiño.escolar
             ? true
             : dataClient.edadNiño.escolar
             ? false
-            : true && elem.edadNiño.adolescente
+            : elem.edadNiño.adolescente
             ? true
             : dataClient.edadNiño.adolescente
             ? false
-            : true && elem.tareas.cocinar
+            : elem.tareas.cocinar
             ? true
             : dataClient.tareas.cocinar
             ? false
-            : true && elem.tareas.actividades
+            : elem.tareas.actividades
             ? true
             : dataClient.tareas.actividades
             ? false
-            : true && elem.tareas.baño
+            : elem.tareas.baño
             ? true
             : dataClient.tareas.baño
             ? false
-            : true && elem.tareas.deberes
+            : elem.tareas.deberes
             ? true
             : dataClient.tareas.deberes
             ? false
-            : true && elem.tareas.dormir
+            : elem.tareas.dormir
             ? true
             : dataClient.tareas.dormir
             ? false
-            : true && elem.tareas.recogida
+            : elem.tareas.recogida
             ? true
             : dataClient.tareas.recogida
             ? false
-            : true && elem.ocasional
+            : elem.ocasional
             ? true
             : dataClient.reservationOccasional
             ? false
