@@ -1,6 +1,17 @@
 {
+
   "guardian": [
     {
+      "nombre": "Miguel",
+      "apellidos": "Ponte",
+      "localidad": "MADRID",
+      "provincia": "MADRID",
+      "nacimiento": "2024-10-20",
+      "telefono": "642578307",
+      "email": "migueel26@gmail.com",
+      "foto": "ttt",
+
+
       "id": "abcd",
       "nombre": "Pepe",
       "apellidos": "Gonzalez",
@@ -9,24 +20,66 @@
       "nacimiento": "01/01/1990",
       "teléfono": "699699699",
       "email": "a@a.a",
+
+
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwbiM41NMUHN6M2vhRmygFz_hbaGER3R4qGg&s",
+
       "numeroNiños": "1",
-      "edadNiño": {
+      "edadesSeleccionadas": {
         "bebe": true,
         "pequeño": false,
         "prescolar": false,
         "escolar": false,
         "adolescente": false
       },
-      "tareas": {
-        "cocinar": false,
-        "recogida": false,
+      "serviciosSeleccionados": {
+        "cocinar": true,
+        "recogida": true,
         "tareas": false,
-        "actividades": true,
+        "actividades": false,
         "dormir": false
       },
       "diasSemana": {
         "L": false,
+        "M": true,
+        "X": true,
+        "J": false,
+        "V": false,
+        "S": false,
+        "D": false
+      },
+      "horaInicio": "05:05",
+      "horaFin": "07:07",
+      "tarifa": 7,
+      "comentario": "",
+      "id": "kQH8gY9"
+    },
+    {
+      "nombre": "Jorge",
+      "apellidos": "perez",
+      "localidad": "madrid",
+      "provincia": "madrid",
+      "nacimiento": "2024-08-07",
+      "telefono": "64567782",
+      "email": "jorge@hormail.com",
+      "foto": "tte",
+      "numeroNiños": "2",
+      "edadesSeleccionadas": {
+        "bebe": true,
+        "pequeño": true,
+        "prescolar": true,
+        "escolar": false,
+        "adolescente": false
+      },
+      "serviciosSeleccionados": {
+        "cocinar": false,
+        "recogida": false,
+        "tareas": false,
+        "actividades": false,
+        "dormir": false
+      },
+      "diasSemana": {
+        "L": true,
         "M": false,
         " X": false,
         "J": false,
@@ -34,17 +87,169 @@
         "S": false,
         "D": false
       },
-      "horaInicio": [
-        20,
-        5
-      ],
-      "horaFin": [
-        20,
-        5
-      ],
-      "tiempo": 5,
+
+      "horaInicio": "13:00",
+      "horaFin": "16:00",
+      "tarifa": 14,
+      "comentario": "",
+      "id": "anJO-rv"
+    },
+    {
+      "nombre": "Carlos",
+      "apellidos": "Matheus",
+      "localidad": "MADRID",
+      "provincia": "MADRID",
+      "nacimiento": "2024-05-04",
+      "telefono": "642578590",
+      "email": "carlos@gmail.com",
+      "foto": "https://img.freepik.com/fotos-premium/retrato-hombre-joven-guapo_53876-38137.jpg",
+      "numeroNiños": "4",
+      "edadesSeleccionadas": {
+        "bebe": false,
+        "pequeño": false,
+        "prescolar": false,
+        "escolar": true,
+        "adolescente": true
+      },
+      "serviciosSeleccionados": {
+        "cocinar": true,
+        "recogida": true,
+        "tareas": false,
+        "actividades": false,
+        "dormir": false
+      },
+      "diasSemana": {
+        "L": true,
+        "M": true,
+        "X": true,
+        "J": true,
+        "V": true,
+        "S": true,
+        "D": true
+      },
+      "horaInicio": "08:00",
+      "horaFin": "14:00",
+
       "tarifa": 20,
-      "comentario": ""
+      "comentario": "Trato especializado y certificados de salud",
+      "id": "yxQ53nc"
+    },
+    {
+      "nombre": "Pablo",
+      "apellidos": "Cardenas",
+      "localidad": "MADRID",
+      "provincia": "MADRID",
+      "nacimiento": "1965-02-21",
+      "telefono": "642578307",
+      "email": "migueel26@gmail.com",
+      "foto": "https://st3.depositphotos.com/1743476/16188/i/450/depositphotos_161885998-stock-photo-mature-mixed-race-man-smiling.jpg",
+      "numeroNiños": "5",
+      "edadesSeleccionadas": {
+        "bebe": false,
+        "pequeño": false,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": true
+      },
+      "serviciosSeleccionados": {
+        "cocinar": false,
+        "recogida": true,
+        "tareas": false,
+        "actividades": false,
+        "dormir": true
+      },
+      "diasSemana": {
+        "L": false,
+        "M": false,
+        "X": false,
+        "J": true,
+        "V": true,
+        "S": true,
+        "D": true
+      },
+      "horaInicio": "13:00",
+      "horaFin": "20:00",
+      "tarifa": 23,
+      "comentario": "Soy un guardián altamente capacitado y con amplia experiencia en el cuidado de niños y adolescentes. mas de 6 años de experiencia, he trabajado en hogares privados y centros de atención diurna . Mi enfoque se basa en la empatía, la paciencia y la comunicación efectiva, adaptándome a las necesidades individuales de cada peque.",
+      "id": "VB_PAJR"
+    },
+    {
+      "nombre": "Raquel",
+      "apellidos": "Kasais",
+      "localidad": "MADRID",
+      "provincia": "MADRID",
+      "nacimiento": "1991-08-02",
+      "telefono": "6425744490",
+      "email": "migueel26@gmail.com",
+      "foto": "https://media.istockphoto.com/id/1326417862/es/foto/mujer-joven-riendo-mientras-se-relaja-en-casa.jpg?s=612x612&w=0&k=20&c=BQHE9M8b6hixE_TB1XzuvxobnyD4ylKMTprVbrhPxOU=",
+      "numeroNiños": "2",
+      "edadesSeleccionadas": {
+        "bebe": true,
+        "pequeño": false,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": false
+      },
+      "serviciosSeleccionados": {
+        "cocinar": true,
+        "recogida": false,
+        "tareas": true,
+        "actividades": false,
+        "dormir": true
+      },
+      "diasSemana": {
+        "L": true,
+        "M": true,
+        "X": false,
+        "J": true,
+        "V": true,
+        "S": false,
+        "D": true
+      },
+      "horaInicio": "10:00",
+      "horaFin": "14:00",
+      "tarifa": 17,
+      "comentario": "Soy una cuidadora dedicada y apasionada con experiencia en el cuidado de niños y adolescentes. He trabajado durante más de 2 años en hogares privados y centros de atención diurna, donde he aprendido a crear un ambiente seguro y acogedor. Mi enfoque se basa en la empatía, la paciencia y la comunicación efectiva, adaptándome a las necesidades individuales de cada niño.",
+      "id": "ZfPTb19"
+    },
+    {
+      "nombre": "Caridad",
+      "apellidos": "Spinola",
+      "localidad": "MADRID",
+      "provincia": "MADRID",
+      "nacimiento": "1955-04-25",
+      "telefono": "642578560",
+      "email": "migueel26@gmail.com",
+      "foto": "https://media.istockphoto.com/id/517234226/es/foto/no-veo-ninguna-raz%C3%B3n-a-ley-mi-edad.jpg?s=612x612&w=0&k=20&c=eiSCoCpZeMts5pO5mJdgaObmzZJjvE7MS4b8tKABdWw=",
+      "numeroNiños": "3",
+      "edadesSeleccionadas": {
+        "bebe": false,
+        "pequeño": true,
+        "prescolar": true,
+        "escolar": false,
+        "adolescente": false
+      },
+      "serviciosSeleccionados": {
+        "cocinar": true,
+        "recogida": true,
+        "tareas": true,
+        "actividades": false,
+        "dormir": false
+      },
+      "diasSemana": {
+        "L": true,
+        "M": true,
+        "X": true,
+        "J": true,
+        "V": true,
+        "S": false,
+        "D": false
+      },
+      "horaInicio": "09:00",
+      "horaFin": "15:00",
+      "tarifa": 25,
+      "comentario": "Soy una cuidadora experimentada y compasiva con más de 15 años de trayectoria en el cuidado de niños y adolescentes. He trabajado en diversos entornos, incluyendo hogares privados y centros de atención diurna, donde he desarrollado habilidades para crear un ambiente seguro, acogedor y enriquecedor para los más jóvenes.",
+      "id": "Hn7NThf"
     }
   ],
   "client": [
