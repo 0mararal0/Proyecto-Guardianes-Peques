@@ -1,29 +1,16 @@
 {
-
   "guardian": [
     {
-      "nombre": "Miguel",
-      "apellidos": "Ponte",
-      "localidad": "MADRID",
-      "provincia": "MADRID",
-      "nacimiento": "2024-10-20",
-      "telefono": "642578307",
-      "email": "migueel26@gmail.com",
-      "foto": "ttt",
-
-
-      "id": "abcd",
       "nombre": "Pepe",
       "apellidos": "Gonzalez",
       "localidad": "arroyo",
       "provincia": "valladolid",
       "nacimiento": "01/01/1990",
-      "teléfono": "699699699",
+      "telefono": "642578307",
       "email": "a@a.a",
-
-
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwbiM41NMUHN6M2vhRmygFz_hbaGER3R4qGg&s",
-
+      "id": "kQH8gY9",
+      "teléfono": "699699699",
       "numeroNiños": "1",
       "edadesSeleccionadas": {
         "bebe": true,
@@ -51,48 +38,7 @@
       "horaInicio": "05:05",
       "horaFin": "07:07",
       "tarifa": 7,
-      "comentario": "",
-      "id": "kQH8gY9"
-    },
-    {
-      "nombre": "Jorge",
-      "apellidos": "perez",
-      "localidad": "madrid",
-      "provincia": "madrid",
-      "nacimiento": "2024-08-07",
-      "telefono": "64567782",
-      "email": "jorge@hormail.com",
-      "foto": "tte",
-      "numeroNiños": "2",
-      "edadesSeleccionadas": {
-        "bebe": true,
-        "pequeño": true,
-        "prescolar": true,
-        "escolar": false,
-        "adolescente": false
-      },
-      "serviciosSeleccionados": {
-        "cocinar": false,
-        "recogida": false,
-        "tareas": false,
-        "actividades": false,
-        "dormir": false
-      },
-      "diasSemana": {
-        "L": true,
-        "M": false,
-        " X": false,
-        "J": false,
-        "V": false,
-        "S": false,
-        "D": false
-      },
-
-      "horaInicio": "13:00",
-      "horaFin": "16:00",
-      "tarifa": 14,
-      "comentario": "",
-      "id": "anJO-rv"
+      "comentario": ""
     },
     {
       "nombre": "Carlos",
@@ -129,7 +75,6 @@
       },
       "horaInicio": "08:00",
       "horaFin": "14:00",
-
       "tarifa": 20,
       "comentario": "Trato especializado y certificados de salud",
       "id": "yxQ53nc"
@@ -363,15 +308,8 @@
         "S": false,
         "D": false
       },
-      "reservationDay": [
-        null,
-        null,
-        null
-      ],
-      "reservationHour": [
-        null,
-        null
-      ],
+      "reservationDay": [null, null, null],
+      "reservationHour": [null, null],
       "nombre": "Alberto",
       "apellidos": "Marcos",
       "email": "amarcosarranz@gmail.com",
