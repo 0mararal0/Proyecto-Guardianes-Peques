@@ -11,6 +11,8 @@ import { FilterGuardian } from "./pages/Filter/FilterGuardian";
 import { LegalNotice } from "./pages/LegalNotice/LegalNotice";
 import { Contact } from "./pages/Contact/Contact";
 import { NotFound } from "./pages/NotFound/NotFound";
+import { Reservation } from "./pages/Reservation/reservation";
+import { Guardians } from "./pages/Guardians/Guardians";
 
 function App() {
   return (
@@ -24,7 +26,10 @@ function App() {
           <Route path="/legalNotice" element={<LegalNotice />} />
           <Route path="/filter" element={<Filter />} />
           <Route path="/filterClient" element={<FilterClient />} />
+          <Route path="/filterClient/" element={<FilterClient />} />
           <Route path="/filterGuardian" element={<FilterGuardian />} />
+          <Route path="/guardians" element={<Guardians />} />
+          <Route path="/reservation/:guardianId" element={<Reservation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
