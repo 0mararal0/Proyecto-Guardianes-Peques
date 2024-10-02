@@ -1,4 +1,6 @@
 {
+  "guardian": [
+    {
       "id": "abcd",
       "nombre": "Pepe",
       "apellidos": "Gonzalez",
@@ -33,8 +35,8 @@
         "S": false,
         "D": false
       },
-      "diaInicio": [1,5,2024],
-      "horaInicio": [20,5],
+      "diaInicio": [1, 5, 2024],
+      "horaInicio": [20, 5],
       "tiempo": 5,
       "tarifa": 20,
       "comentario": ""
