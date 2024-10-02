@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
   "guardian": [
     {
       "nombre": "Miguel",
@@ -10,7 +10,8 @@
       "telefono": "642578307",
       "email": "migueel26@gmail.com",
       "foto": "ttt",
-=======
+
+
       "id": "abcd",
       "nombre": "Pepe",
       "apellidos": "Gonzalez",
@@ -19,8 +20,10 @@
       "nacimiento": "01/01/1990",
       "teléfono": "699699699",
       "email": "a@a.a",
-      "foto": "",
->>>>>>> c57143a05d373a29a71c4329e343d8bb14d53008
+
+
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwbiM41NMUHN6M2vhRmygFz_hbaGER3R4qGg&s",
+
       "numeroNiños": "1",
       "edadesSeleccionadas": {
         "bebe": true,
@@ -84,6 +87,7 @@
         "S": false,
         "D": false
       },
+
       "horaInicio": "13:00",
       "horaFin": "16:00",
       "tarifa": 14,
@@ -125,6 +129,7 @@
       },
       "horaInicio": "08:00",
       "horaFin": "14:00",
+
       "tarifa": 20,
       "comentario": "Trato especializado y certificados de salud",
       "id": "yxQ53nc"
@@ -287,7 +292,8 @@
         "dormir": false
       },
       "telefono": "33434",
-      "zip": "47195"
+      "zip": "47195",
+      "guardianId": "abcd"
     },
     {
       "id": "2",
@@ -326,7 +332,58 @@
         "dormir": false
       },
       "telefono": "334dd34",
-      "zip": "471s95"
+      "zip": "471s95",
+      "guardianId": "abcd"
+    },
+    {
+      "niños": "1",
+      "edadNiño": {
+        "bebe": true,
+        "pequeño": false,
+        "prescolar": false,
+        "escolar": false,
+        "adolescente": false
+      },
+      "tareas": {
+        "cocinar": false,
+        "recogida": false,
+        "tareas": false,
+        "actividades": false,
+        "dormir": false,
+        "deberes": false,
+        "baño": false
+      },
+      "reservationOccasional": false,
+      "reservationWeek": {
+        "L": false,
+        "M": false,
+        "X": false,
+        "J": false,
+        "V": false,
+        "S": false,
+        "D": false
+      },
+      "reservationDay": [
+        null,
+        null,
+        null
+      ],
+      "reservationHour": [
+        null,
+        null
+      ],
+      "nombre": "Alberto",
+      "apellidos": "Marcos",
+      "email": "amarcosarranz@gmail.com",
+      "direcion": "Calle Narciso Monturiol 10",
+      "piso": "Arroyo de la Encomienda",
+      "letra": "1",
+      "zip": "47195",
+      "ciudad": "Arroyo de la Encomienda",
+      "poblacion": "625772875",
+      "telefono": "1",
+      "guardianId": "abcd",
+      "id": "fzFkxf_"
     }
   ]
 }
