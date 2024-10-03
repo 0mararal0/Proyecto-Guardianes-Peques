@@ -20,6 +20,7 @@ export const NavbarApp = () => {
           >
             <Nav>
               <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/reservation">Reservas</Nav.Link>
               <Nav.Link href="/guardians">Guardianes</Nav.Link>
               <Nav.Link href="#link">FAQ´S</Nav.Link>
             </Nav>

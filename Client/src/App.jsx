@@ -31,7 +31,7 @@ function App() {
           <Route path="/filterGuardian" element={<FilterGuardian />} />
           <Route path="/guardians" element={<Guardians />} />
           <Route path="/editGuardian/:guardianId" element={<EditGuardian />} />
-          <Route path="/reservation/:guardianId" element={<Reservation />} />
+          <Route path="/reservation" element={<Reservation />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
