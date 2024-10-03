@@ -11,30 +11,75 @@ export const FilterClient5 = ({
   dataClient,
 }) => {
   const [dataGuardianSelect, setDataGuardianSelect] = useState([]);
+  console.log(dataClient);
 
   useEffect(() => {
     axios
       .get("http://localhost:4000/guardian")
       .then((res) => {
+        console.log(res.data);
+
         let prov = res.data.filter((elem) => {
           //Edad del niño
-          if (dataClient.edadNiño.bebe && !elem.edadNiño.bebe) return false;
-          if (dataClient.edadNiño.pequeño && !elem.edadNiño.pequeño)
+          if (dataClient.edadNiño.bebe && !elem.edadesSeleccionadas.bebe)
             return false;
-          if (dataClient.edadNiño.prescolar && !elem.edadNiño.prescolar)
+          if (dataClient.edadNiño.pequeño && !elem.edadesSeleccionadas.pequeño)
             return false;
-          if (dataClient.edadNiño.escolar && !elem.edadNiño.escolar)
+          if (
+            dataClient.edadNiño.prescolar &&
+            !elem.edadesSeleccionadas.prescolar
+          )
             return false;
-          if (dataClient.edadNiño.adolescente && !elem.edadNiño.adolescente)
+          if (dataClient.edadNiño.escolar && !elem.edadesSeleccionadas.escolar)
+            return false;
+          if (
+            dataClient.edadNiño.adolescente &&
+            !elem.edadesSeleccionadas.adolescente
+          )
             return false;
 
           //Tareas
-          if (dataClient.tareas.cocinar && !elem.tareas.cocinar) return false;
-          if (dataClient.tareas.recogida && !elem.tareas.recogida) return false;
-          if (dataClient.tareas.tareas && !elem.tareas.tareas) return false;
-          if (dataClient.tareas.actividades && !elem.tareas.actividades)
+          if (dataClient.tareas.cocinar && !elem.serviciosSeleccionados.cocinar)
             return false;
-          if (dataClient.tareas.dormir && !elem.tareas.dormir) return false;
+          if (
+            dataClient.tareas.recogida &&
+            !elem.serviciosSeleccionados.recogida
+          )
+            return false;
+          if (dataClient.tareas.tareas && !elem.serviciosSeleccionados.tareas)
+            return false;
+          if (
+            dataClient.tareas.actividades &&
+            !elem.serviciosSeleccionados.actividades
+          )
+            return false;
+          if (dataClient.tareas.dormir && !elem.serviciosSeleccionados.dormir)
+            return false;
+
+          //dias de la semana
+          if (dataClient.reservationWeek.L && !elem.diasSemana.L) return false;
+          if (dataClient.reservationWeek.M && !elem.diasSemana.M) return false;
+          if (dataClient.reservationWeek.X && !elem.diasSemana.X) return false;
+          if (dataClient.reservationWeek.J && !elem.diasSemana.J) return false;
+          if (dataClient.reservationWeek.V && !elem.diasSemana.V) return false;
+          if (dataClient.reservationWeek.S && !elem.diasSemana.S) return false;
+          if (dataClient.reservationWeek.D && !elem.diasSemana.D) return false;
+          //que correspondan las horas en serviciosSeleccionados
+          const [horaInicio, minInicio] = elem.horaInicio
+            .split(":")
+            .map(Number);
+          const [horaFin, minFin] = elem.horaFin.split(":").map(Number);
+          const [horaInicioClient, minInicioClient] = dataClient.reservationHour
+            .split(":")
+            .map(Number);
+          if (horaInicioClient < horaInicio && horaInicioClient > horaFin)
+            return false;
+          if (horaInicioClient === horaInicio && minInicio > minInicioClient)
+            return false;
+          if (horaInicioClient + parseInt(dataClient.reservationTime) > horaFin)
+            return false;
+          console.log(horaInicio);
+          console.log(elem.horaInicio);
 
           return true;
         });
