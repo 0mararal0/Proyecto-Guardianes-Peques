@@ -15,9 +15,8 @@ export const FilterClient1 = ({
     escolar: false,
     adolescente: false,
   });
-  console.log(kidAge);
 
-  const [kid, setKid] = useState(null); //guardamos los niños que tiene
+  const [kid, setKid] = useState(null);
 
   const handleKids = (e) => {
     setKid(e.target.id);

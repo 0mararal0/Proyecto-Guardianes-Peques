@@ -46,10 +46,9 @@ export const FilterClient2 = ({
               id={key}
               value={key}
               checked={task[key]}
-              onChange={handleTask} // Cambiado de onClick a onChange
+              onChange={handleTask}
             >
               {key.charAt(0).toUpperCase() + key.slice(1)}{" "}
-              {/* Capitaliza la primera letra */}
             </ToggleButton>
           ))}
         </ToggleButtonGroup>
