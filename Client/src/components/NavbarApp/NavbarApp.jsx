@@ -19,6 +19,7 @@ export const NavbarApp = () => {
             id="basic-navbar-nav"
             className="justify-content-end"
           >
+
             <Nav className="header-nav">
               <Nav.Link href="/" className="tipo-letra">
                 Home
@@ -32,6 +33,7 @@ export const NavbarApp = () => {
               <Nav.Link href="#link" className="tipo-letra">
                 FAQ´S
               </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
