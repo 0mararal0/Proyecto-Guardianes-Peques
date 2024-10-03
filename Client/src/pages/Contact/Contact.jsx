@@ -4,7 +4,8 @@ import "./styleContact.css";
 export const Contact = () => {
   return (
     <div className="contact-container">
-      {/* Primera parte */}
+
+      /* Primera parte */
       <div className="contact-section">
         <h1>Encuentra tu guardián</h1>
         <button>Encuentra tu guardián</button>
@@ -13,7 +14,7 @@ export const Contact = () => {
         </p>
       </div>
 
-      {/* Segunda parte */}
+      /* Segunda parte */
       <div className="form-section">
         <div>
           <h2>¿Necesitas un cuidador?</h2>
@@ -31,8 +32,8 @@ export const Contact = () => {
           </form>
         </div>
 
-        {/* Recordatorio del número de teléfono */}
-        <div className="phone-reminder">
+        /* Recordatorio del número de teléfono */
+        <div className="phone">
           <h3>Recuerda:</h3>
           <p>Puedes llamarnos al:</p>
           <p>
