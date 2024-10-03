@@ -75,12 +75,12 @@
       },
       "horaInicio": "08:00",
       "horaFin": "14:00",
-      "tarifa": 20,
-      "comentario": "Trato especializado y certificados de salud",
+      "tarifa": "20",
+      "comentario": "Trato especializado y certificados de saludss",
       "id": "yxQ53nc"
     },
     {
-      "nombre": "Pablo",
+      "nombre": "Pablor",
       "apellidos": "Cardenas",
       "localidad": "MADRID",
       "provincia": "MADRID",
@@ -114,7 +114,7 @@
       },
       "horaInicio": "13:00",
       "horaFin": "20:00",
-      "tarifa": 23,
+      "tarifa": "25",
       "comentario": "Soy un guardián altamente capacitado y con amplia experiencia en el cuidado de niños y adolescentes. mas de 6 años de experiencia, he trabajado en hogares privados y centros de atención diurna . Mi enfoque se basa en la empatía, la paciencia y la comunicación efectiva, adaptándome a las necesidades individuales de cada peque.",
       "id": "VB_PAJR"
     },
@@ -279,49 +279,6 @@
       "telefono": "334dd34",
       "zip": "471s95",
       "guardianId": "abcd"
-    },
-    {
-      "niños": "1",
-      "edadNiño": {
-        "bebe": true,
-        "pequeño": false,
-        "prescolar": false,
-        "escolar": false,
-        "adolescente": false
-      },
-      "tareas": {
-        "cocinar": false,
-        "recogida": false,
-        "tareas": false,
-        "actividades": false,
-        "dormir": false,
-        "deberes": false,
-        "baño": false
-      },
-      "reservationOccasional": false,
-      "reservationWeek": {
-        "L": false,
-        "M": false,
-        "X": false,
-        "J": false,
-        "V": false,
-        "S": false,
-        "D": false
-      },
-      "reservationDay": [null, null, null],
-      "reservationHour": [null, null],
-      "nombre": "Alberto",
-      "apellidos": "Marcos",
-      "email": "amarcosarranz@gmail.com",
-      "direcion": "Calle Narciso Monturiol 10",
-      "piso": "Arroyo de la Encomienda",
-      "letra": "1",
-      "zip": "47195",
-      "ciudad": "Arroyo de la Encomienda",
-      "poblacion": "625772875",
-      "telefono": "1",
-      "guardianId": "abcd",
-      "id": "fzFkxf_"
     }
   ]
 }

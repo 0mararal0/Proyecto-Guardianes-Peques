@@ -41,7 +41,7 @@ export const Guardians = () => {
 
   return (
     <>
-      <div>
+      <div className="d-flex gap-5 shadow-lg flex-wrap">
         {dataGuardian.length !== 0 &&
           dataGuardian?.map((elem) => {
             return (
